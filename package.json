@@ -1,6 +1,6 @@
 {
   "name": "axios-wx",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "参考axios的方式对微信小程序请求封装库",
   "main": "dist/axios-wx.umd.js",
   "module": "dist/axios-wx.es5.js",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/touxing/akutil.git"
+    "url": "https://github.com/touxing/axios-wx.git"
   },
   "license": "MIT",
   "lint-staged": {
