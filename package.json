@@ -1,6 +1,6 @@
 {
   "name": "@hotsuitor/axios-wx",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "参考axios的方式对微信小程序请求封装库",
   "main": "dist/axios-wx.umd.js",
   "module": "dist/axios-wx.es5.js",
