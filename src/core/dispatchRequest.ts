@@ -1,5 +1,4 @@
-import { isAbsolute } from 'path'
-import { buildURL, combineURL } from '../helpers/url'
+import { buildURL, combineURL, isAbsoluteURL } from '../helpers/url'
 import { RequestConfig, RequestPromise, RequestResponse } from '../types'
 import ajax from './ajax'
 import transform from './transform'
@@ -26,7 +25,7 @@ function processCofnig(config: RequestConfig) {
 
 function transformURL(config: RequestConfig): string {
   let { url, params, paramsSerializer, baseURL } = config
-  if (baseURL && !isAbsolute(url!)) {
+  if (baseURL && !isAbsoluteURL(url!)) {
     url = combineURL(url!)
   }
   return buildURL(url!, params, paramsSerializer)
